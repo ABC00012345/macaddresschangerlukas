@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="MAC Changer"
+		android:layout_gravity="center"
+		android:layout_marginTop="15dp"
+		android:textSize="25sp"
+		android:layout_marginBottom="30dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Current MAC: Failed!"
+		android:layout_marginLeft="10dp"
+		android:layout_marginBottom="5dp"
+		android:id="@+id/macview"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="New Mac:"
+		android:layout_marginLeft="10dp"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:id="@+id/newmacte"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="5dp"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/changebtn"
+		android:text="CHANGE"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10dp"/>
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/restorebtn"
+		android:text="RESTORE"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="0dp"
+		android:layout_marginRight="10dp"/>
+
+	<TextView
+		android:id="@+id/macaddrtext"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Old Mac since App Start: Can't detect !! Write down your priginal Mac before Change !!"
+		android:layout_gravity="center"
+		android:layout_marginTop="40dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"/>
+
+</LinearLayout>
+
